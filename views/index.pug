@@ -1,5 +1,30 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  //stolen from https://bootsnipp.com/snippets/featured/dynamic-form-fields-add-amp-remove-bs3
+  .text-center
+    h1= title
+    h3 Let's find a great name for it, it will totally blow up
+    br
+    br
+
+  .container
+    .col-md-6
+      .row.col-md-10
+        #fields.control-group
+          label.control-label Ideas
+          .controls
+            form
+              .entry.input-group
+                input.form-control(name='fields[]', type='text', placeholder='Type something')
+                span.input-group-btn
+                  button.btn.btn-success.btn-add(type='button')
+                    span.glyphicon.glyphicon-plus
+
+          br
+          .text-center
+            button.btn.btn-primary.translateBtn(type='button') Generate names !
+
+
+    .col-md-6.my-auto.text-center
+        p Results will be displayed here

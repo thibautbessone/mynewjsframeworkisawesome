@@ -6,3 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+
+.entry:not(:first-of-type) {
+  margin-top: 10px;
+}
+
+.glyphicon {
+  font-size: 12px;
+}
