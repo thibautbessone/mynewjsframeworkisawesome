@@ -3,11 +3,18 @@
 $(document).ready(function() {
     $('.translateBtn').on('click', function() {
         let $this = $(this);
-        let loadingText = '<i class="fa fa-circle-o-notch fa-spin"></i> Translating ...';
+        let loadingText = '<i class="fa fa-circle-o-notch fa-spin"></i> Generating ...';
         if ($(this).html() !== loadingText) {
             $this.data('original-text', $(this).html());
             $this.html(loadingText);
         }
+
+        let url = 'ideas';
+        $('input[type=\'text\']').each(function () {
+            url += "/" + $(this).val();
+        });
+        console.log(url);
+        window.location = url;
     });
 });
 

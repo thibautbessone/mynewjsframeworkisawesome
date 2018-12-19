@@ -9,22 +9,17 @@ block content
     br
 
   .container
-    .col-md-6
-      .row.col-md-10
-        #fields.control-group
-          label.control-label Ideas
-          .controls
-            form
-              .entry.input-group
-                input.form-control(name='fields[]', type='text', placeholder='Type something')
-                span.input-group-btn
-                  button.btn.btn-success.btn-add(type='button')
-                    span.glyphicon.glyphicon-plus
+    .row.col-md-4.text-center.col-md-offset-4
+      #fields.control-group
+        label.control-label Ideas
+        .controls
+          form
+            .entry.input-group
+              input.form-control(name='fields[]', type='text', placeholder='Type something')
+              span.input-group-btn
+                button.btn.btn-success.btn-add(type='button')
+                  span.glyphicon.glyphicon-plus
 
-          br
-          .text-center
-            button.btn.btn-primary.translateBtn(type='button') Generate names !
-
-
-    .col-md-6.my-auto.text-center
-        p Results will be displayed here
+        br
+        .text-center
+          button.btn.btn-primary.translateBtn(type='button') Generate names !

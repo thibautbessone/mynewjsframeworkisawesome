@@ -6,6 +6,7 @@ router.get('/*', function(req, res, next) {
     console.log(req.params[0]);
     let params = req.params[0].split('/');
     console.log(params);
+    res.render('names', { text: params })
 
 });
 
