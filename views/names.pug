@@ -1,4 +1,18 @@
 extends layout
 
 block content
-    h1= text
+
+    .text-center
+      h2 I got great names for your framework, check these out !
+      h4 Note : these are chosen randomly from words matching your ideas
+      br
+      br
+    .container
+      .row
+        each val, key in names
+          .col
+            h3 #{key}
+            each word in val
+              p #{word.language} : #{word.translation}
+
+      include footer

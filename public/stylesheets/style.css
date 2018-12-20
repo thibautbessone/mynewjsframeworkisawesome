@@ -1,6 +1,6 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 13px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -13,4 +13,11 @@ a {
 
 .glyphicon {
   font-size: 12px;
+}
+
+footer{
+  text-align: center;
+  position:absolute;
+  bottom:0;
+  padding-top:50px;
 }

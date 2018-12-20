@@ -23,7 +23,7 @@ $(document).ready(function() {
 $(function() {
     $(document).on('click', '.btn-add', function(e) {
         e.preventDefault();
-        let controlForm = $('.controls form:first'),
+        let controlForm = $('.controls:first'),
             currentEntry = $(this).parents('.entry:first'),
             newEntry = $(currentEntry.clone()).hide().appendTo(controlForm).fadeIn(200);
 

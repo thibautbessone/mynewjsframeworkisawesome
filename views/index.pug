@@ -13,13 +13,16 @@ block content
       #fields.control-group
         label.control-label Ideas
         .controls
-          form
-            .entry.input-group
-              input.form-control(name='fields[]', type='text', placeholder='Type something')
-              span.input-group-btn
-                button.btn.btn-success.btn-add(type='button')
-                  span.glyphicon.glyphicon-plus
+          .entry.input-group
+            input.form-control(type='text', placeholder='Type something')
+            span.input-group-btn
+              button.btn.btn-success.btn-add(type='button')
+                span.glyphicon.glyphicon-plus
 
         br
         .text-center
-          button.btn.btn-primary.translateBtn(type='button') Generate names !
+          p Provide several ideas for more accurate results
+          p If no idea is provided, random words will be picked
+          button.btn.btn-primary.translateBtn(type='submit') Generate names !
+
+    include footer
