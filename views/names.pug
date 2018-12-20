@@ -13,6 +13,6 @@ block content
           .col
             h3 #{key}
             each word in val
-              p #{word.language} : #{word.translation}
+              p #{word.language} : #{word.translation} #{word.romanized}
 
       include footer
