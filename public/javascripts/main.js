@@ -33,7 +33,7 @@ $(function() {
             .removeClass('btn-success').addClass('btn-danger')
             .html('<span class="glyphicon glyphicon-minus"></span>');
     }).on('click', '.btn-remove', function(e) {
-        $(this).parents('.entry:first').fadeOut(200);
+        $(this).parents('.entry:first').remove().fadeOut(200);
         e.preventDefault();
         return false;
     });
